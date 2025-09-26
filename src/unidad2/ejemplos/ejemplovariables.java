@@ -20,10 +20,26 @@
  * SOFTWARE.
  */
 
-import src.ConsoleColors;
+package unidad2.ejemplos;
 
-public class Main {
+public class ejemplovariables {
+
     public static void main(String[] args) {
-        System.out.println("Here you'll find all of my " + ConsoleColors.RED + "Development DAM" + ConsoleColors.RESET + " projects.");
+        int numVacaciones; // Declaración de variable (siempre en minusculas)
+        numVacaciones = 5; // Asignación de valor
+
+        System.out.println("Días de vacaciones: " + numVacaciones);
+
+        String saludo;
+        saludo = "Hola";
+        System.out.println(saludo);
+
+        int edad = 18;
+        System.out.println("Edad: " + edad);
+
+        final double IVA = 0.21; // Constante (siempre en mayusculas) no se puede inicializar dos veces
+        // IVA = 0.10; // Error: no se puede cambiar el valor de una constante
+        System.out.println("IVA: " + IVA);
+
     }
 }
