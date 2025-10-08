@@ -20,9 +20,9 @@
  * SOFTWARE.
  */
 
-package unidad2.ejemplos;
+package u2.examples;
 
-public class ejemploOpLogicos {
+public class logicoperators {
     public static void main(String[] args) {
 
         boolean op1 = true;

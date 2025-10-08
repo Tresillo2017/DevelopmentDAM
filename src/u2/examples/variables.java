@@ -20,9 +20,9 @@
  * SOFTWARE.
  */
 
-package unidad2.ejemplos;
+package u2.examples;
 
-public class ejemplovariables {
+public class variables {
 
     public static void main(String[] args) {
         int numVacaciones; // Declaración de variable (siempre en minusculas)

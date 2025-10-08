@@ -1,3 +1,4 @@
+
 /*
  * Copyright (c) 2025.  Tomas Palma Sanchez
  *
@@ -20,28 +21,10 @@
  * SOFTWARE.
  */
 
-/*
-        Realizar un programa en Java que calcule el área del cuadrado y el del círculo. Mostrar los resultados por consola.
-        Declara una variable lado con el valor 10 y otra variable radio con el valor 3,2 que serán las que utilizaremos para hacer los cálculos.
-        Una vez declaradas las variables utilízalas para obtener el calculo de las áreas.
-              Área cuadrado = lado * lado = lado2
-              Área círculo = PI * radio2
-        Utilizar la función POW de la clase Math.
- */
-package unidad2.tareas;
+package u1.examples;
 
-public class tarea4 {
+public class holamundo {
     public static void main(String[] args) {
-
-        int lado = 10;
-        float radio = 3.2f;
-
-        // Area cuadrado
-        double areacuadrado = Math.pow(lado, 2);
-        System.out.println("Area Cuadrado: " + areacuadrado);
-
-        // Area circulo
-        double areacirculo = Math.PI * Math.pow(radio, 2);
-        System.out.println("Area Circulo: " + areacirculo);
+        System.out.println("Hola Mundo");
     }
 }

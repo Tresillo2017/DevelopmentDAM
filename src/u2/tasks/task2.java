@@ -20,30 +20,26 @@
  * SOFTWARE.
  */
 
-package unidad2.ejemplos;
+package u2.tasks;
 
-public class ejemplosMath {
+public class task2 {
     public static void main(String[] args) {
+        int entero = 7;
+        double grande = 34850000.58172;
+        boolean booleano = true;
+        String texto = "Esto es un ejemplo de como declarar datos";
+        double negativo = -135.248053912;
+        char signoPregunta = '?';
+        String cliente = "Mi número de cliente es: 12345";
+        String nombre = "Mi nombre es: Pepe";
 
-        double n = Math.sqrt(9);
-
-        System.out.println(n);
-
-        int num1 = 1000;
-        int num2 = 200;
-
-        int numMax = Math.max(num1, num2);
-
-        System.out.println("Numero maximo: " + numMax);
-
-//        numMax = numMax + 1;
-//        numMax += 1;
-        numMax++;
-        System.out.println("Valor incrementado: " + numMax);
-
-        // Incrementamos en 5 la variable numMax
-
-        numMax += 5;
-        System.out.println("Valor incrementado en 5: " + numMax);
+        System.out.println(entero);
+        System.out.println(grande);
+        System.out.println(booleano);
+        System.out.println(texto);
+        System.out.println(negativo);
+        System.out.println(signoPregunta);
+        System.out.println(cliente);
+        System.out.println(nombre);
     }
 }

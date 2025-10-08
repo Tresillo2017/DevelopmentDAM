@@ -1,4 +1,3 @@
-
 /*
  * Copyright (c) 2025.  Tomas Palma Sanchez
  *
@@ -21,10 +20,32 @@
  * SOFTWARE.
  */
 
-package unidad1.ejemplos;
+/*
+Declara 3 variables de tipo entero a, b y c con los valores 10, 20 y 30 respectivamente.
+Realiza las siguientes operaciones y muestra el resultado por consola de cada una de ellas:
+    Comprueba si la variable a es igual a c y distinta de b.
+    Comprueba si b es mayor que a o c es menor que a.
+    Niega la expresión anterior.
+*/
+package u2.tasks;
 
-public class holamundo {
+public class task6 {
     public static void main(String[] args) {
-        System.out.println("Hola Mundo");
+        int a = 10;
+        int b = 20;
+        int c = 30;
+
+        // Comprueba si la variable a es igual a c y distinta de b.
+        boolean condicion1 = (a == c) && (a != b);
+        System.out.println("(" + a + " == " + c + ") && (" + a + " != " + b + ") = " + condicion1);
+
+        // Comprueba si b es mayor que a o c es menor que a.
+        boolean condicion2 = (b > a) || (c < a);
+        System.out.println("(" + b + " > " + a + ") || (" + c + " < " + a + ") = " + condicion2);
+
+        // Niega la expresión anterior.
+        boolean condicion3 = !condicion2;
+        System.out.println("!(" + "(" + b + " > " + a + ") || (" + c + " < " + a + ")) = " + condicion3);
+
     }
 }

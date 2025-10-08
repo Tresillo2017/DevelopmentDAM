@@ -21,33 +21,30 @@
  */
 
 /*
-    Declara una variable de tipo String que contenga tu nombre completo.
-    Con la ayuda de los métodos de la clase String:
-        Pinta por consola la longitud de tu nombre.
-        Muestra el primer carácter de tu nombre.
-        Muestra el último carácter de tu nombre.
-        Indicar si vuestro nombre contiene la letra 'a'.
- */
-package unidad2.tareas;
+Declara tres variables de tipo booleano: esAlumno, tieneBeca y esExtranjero.
+Asígnales un valor (el que tu quieras).
+Utilizando el método println() pinta por consola si cumple la condición de matrícula gratuita:
 
-public class tarea5 {
+<< ser alumno y (tener beca o ser extranjero) >>
+*/
+package u2.tasks;
+
+public class task7 {
     public static void main(String[] args) {
-        String nombreCompleto = "Tomas Palma Sanchez";
+        boolean esAlumno = true;
+        boolean tieneBeca = false;
+        boolean esExtranjero = true;
+        int edad = 18;
 
-        // Longitud del nombre
-        int longitud = nombreCompleto.length();
-        System.out.println("Longitud de mi nombre: " + longitud);
+        boolean matriculaGratuita = esAlumno && (tieneBeca || esExtranjero);
+        System.out.println("¿Cumple la condición de matrícula gratuita? " + matriculaGratuita);
 
-        // Primer carácter
-        char primerCaracter = nombreCompleto.charAt(0);
-        System.out.println("Primer carácter de mi nombre: " + primerCaracter);
+        // Parking fratis si esAlumno y no tiene beca
+        boolean parkingGratis = esAlumno && !tieneBeca;
+        System.out.println("¿Cumple la condición de parking gratuito? " + parkingGratis);
 
-        // Último carácter
-        char ultimoCaracter = nombreCompleto.charAt(longitud - 1);
-        System.out.println("Último carácter de mi nombre: " + ultimoCaracter);
-
-        // Contiene la letra 'a'
-        boolean contieneA = nombreCompleto.toLowerCase().contains("a");
-        System.out.println("¿Mi nombre contiene la letra 'a'? " + contieneA);
+        // Con comedor gratis si no tiene beca o tiene entre 18 y 30 años
+        boolean comedorGratis = !tieneBeca || (edad >= 18 && edad <= 30);
+        System.out.println("¿Cumple la condición de comedor gratuito? " + comedorGratis);
     }
 }

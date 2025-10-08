@@ -20,40 +20,34 @@
  * SOFTWARE.
  */
 
-package unidad2.ejemplos;
+/*
+    Declara una variable de tipo String que contenga tu nombre completo.
+    Con la ayuda de los métodos de la clase String:
+        Pinta por consola la longitud de tu nombre.
+        Muestra el primer carácter de tu nombre.
+        Muestra el último carácter de tu nombre.
+        Indicar si vuestro nombre contiene la letra 'a'.
+ */
+package u2.tasks;
 
-public class ejemplooperadores {
+public class task5 {
     public static void main(String[] args) {
+        String nombreCompleto = "Tomas Palma Sanchez";
 
-        // Operaciones Aritmeticas
-        double num1 = 10;
-        int num2 = 3;
-        double resultado = 0f; // f al final indica que es float
+        // Longitud del nombre
+        int longitud = nombreCompleto.length();
+        System.out.println("Longitud de mi nombre: " + longitud);
 
-        // Suma
-        resultado = num1 + num2;
-        System.out.println(num1 + " + " + num2 + " = " + resultado);
+        // Primer carácter
+        char primerCaracter = nombreCompleto.charAt(0);
+        System.out.println("Primer carácter de mi nombre: " + primerCaracter);
 
-        // Resta
-        resultado = num1 - num2;
-        System.out.println(num1 + " - " + num2 + " = " + resultado);
+        // Último carácter
+        char ultimoCaracter = nombreCompleto.charAt(longitud - 1);
+        System.out.println("Último carácter de mi nombre: " + ultimoCaracter);
 
-        // Multiplicación
-        resultado = num1 * num2;
-        System.out.println(num1 + " * " + num2 + " = " + resultado);
-
-        // División
-        resultado = num1 / num2;
-        System.out.println(num1 + " / " + num2 + " = " + resultado);
-
-        // Resto division
-        resultado = num1 % num2;
-        System.out.println(num1 + " % " + num2 + " = " + resultado);
-
-        // Suma y asignacion
-        double r = 100;
-//        r = r + num1;
-        r += num1;
-        System.out.println(r + " += " + num1 + " = " + r);
+        // Contiene la letra 'a'
+        boolean contieneA = nombreCompleto.toLowerCase().contains("a");
+        System.out.println("¿Mi nombre contiene la letra 'a'? " + contieneA);
     }
 }
