@@ -8,23 +8,6 @@ License: MIT — source files include license headers.
 
 ---
 
-## Repository structure
-
-- src/
-  - ConsoleColors.java
-  - Main.java
-  - u1/
-    - examples/
-    - tasks/
-  - u2/
-    - examples/
-    - tasks/
-  - u3/
-    - examples/
-    - tasks/
-
-Each unit (`u*`) contains examples and tasks. Java files use packages (for example `package u3.tasks;`) to organize the code.
-
 ## Requirements
 
 - JDK 11+ installed (also works with JDK 17, 21, etc.).
