@@ -74,15 +74,19 @@ public class task12 {
         System.out.println("Adivina el número (entre 1 y 100): ");
 
         while (numeroUsuario != numeroSecreto) {
-            numeroUsuario = scanner.nextInt();
-            intentos++;
-
-            if (numeroUsuario < numeroSecreto) {
-                System.out.println("El número es demasiado pequeño. Intenta de nuevo:");
-            } else if (numeroUsuario > numeroSecreto) {
-                System.out.println("El número es demasiado grande. Intenta de nuevo:");
+            if (scanner.hasNextInt()) {
+                numeroUsuario = scanner.nextInt();
+                intentos++;
+                if (numeroUsuario < numeroSecreto) {
+                    System.out.println("El número es demasiado pequeño. Intenta de nuevo:");
+                } else if (numeroUsuario > numeroSecreto) {
+                    System.out.println("El número es demasiado grande. Intenta de nuevo:");
+                } else {
+                    System.out.println("¡Correcto! Has adivinado el número en " + intentos + " intentos.");
+                }
             } else {
-                System.out.println("¡Correcto! Has adivinado el número en " + intentos + " intentos.");
+                System.out.println("No has introducido un número válido.");
+                scanner.next();
             }
         }
 
