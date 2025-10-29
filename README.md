@@ -53,12 +53,6 @@ java -cp out u3.tasks.task12
 
 The task `u3.tasks.task12` implements a "Guess the number" game. When you run it you'll be prompted to enter numbers and the program will give hints until you guess the secret number.
 
-## Best practices and recommendations
-
-- Consider adding a `build.gradle` or `pom.xml` if you want automated builds and IDE/CI integration.
-- Add a `run.sh` script or `Makefile` with common build/run commands to simplify the workflow.
-- Add unit tests if parts of the repository grow and need automated verification.
-
 ## Contributions
 
 If you'd like to contribute:
@@ -70,5 +64,3 @@ If you'd like to contribute:
 Tomas Palma Sanchez
 
 ---
-
-If you'd like, I can also generate a `Makefile`, a basic `build.gradle`, or run scripts (or translate the README into another language); tell me which option you prefer and I'll add it.
