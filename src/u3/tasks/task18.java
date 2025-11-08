@@ -33,25 +33,36 @@ package u3.tasks;
 import java.util.Scanner;
 
 public class task18 {
-    public static int obtenerNumero(int min, int max) {
-        Scanner scanner = new Scanner(System.in);
-        int numero;
-        do {
+    public static int obtenerNumero(Scanner scanner, int min, int max) {
+        while (true) {
             System.out.print("Introduce un número entre " + min + " y " + max + ": ");
-            numero = scanner.nextInt();
-            if (numero < min || numero > max) {
-                System.out.println("Número inválido. Por favor, inténtalo de nuevo.");
+            if (!scanner.hasNext()) {
+                System.out.println("No se recibió entrada. Saliendo.");
+                System.exit(1);
             }
-        } while (numero < min || numero > max);
-        return numero;
+            if (scanner.hasNextInt()) {
+                int numero = scanner.nextInt();
+                scanner.nextLine(); // consumir el resto de la línea
+                if (numero >= min && numero <= max) {
+                    return numero;
+                }
+                System.out.println("Número fuera de rango. Inténtalo de nuevo.");
+            } else {
+                // no es un entero: consumir la línea completa y avisar
+                scanner.nextLine();
+                System.out.println("Entrada inválida. Debes introducir un número entero.");
+            }
+        }
     }
 
     public static void main(String[] args) {
         int suma = 0;
-        for (int i = 0; i < 5; i++) {
-            int numero = obtenerNumero(100, 999);
-            suma += numero;
+        try (Scanner scanner = new Scanner(System.in)) {
+            for (int i = 0; i < 5; i++) {
+                int numero = obtenerNumero(scanner, 100, 999);
+                suma += numero;
+            }
+            System.out.println("La suma de los 5 números obtenidos es: " + suma);
         }
-        System.out.println("La suma de los 5 números obtenidos es: " + suma);
     }
 }
