@@ -28,3 +28,7 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/src/u6/tasks/task1/Persona.class
+/src/u6/tasks/task1/Principal.class
+/src/u6/tasks/task1/Puesto.class
+/src/u5/tasks/task1.tar.xz
