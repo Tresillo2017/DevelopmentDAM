@@ -32,3 +32,6 @@ bin/
 /src/u6/tasks/task1/Principal.class
 /src/u6/tasks/task1/Puesto.class
 /src/u5/tasks/task1.tar.xz
+
+### Compiled ###
+*.class
