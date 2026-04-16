@@ -20,54 +20,50 @@
  * SOFTWARE.
  */
 
-package u6.tasks.task2v2;
+package u6.repaso.re1;
 
+public class Ruta {
+    private String nombreRuta;
+    private double distanciaKm;
+    private String dificultad;
 
-public class Musico {
-    private String nombre;
-    private int edad;
-    private String puesto;
-
-    // Constructor con todos los parámetros
-    public Musico(String nombre, int edad, String puesto) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.puesto = puesto;
+    public Ruta(String nombreRuta, double distanciaKm, String dificultad) {
+        this.nombreRuta = nombreRuta;
+        this.distanciaKm = distanciaKm;
+        this.dificultad = dificultad;
     }
 
-    // Getters
-    public String getNombre() {
-        return nombre;
+
+    public String getNombreRuta() {
+        return nombreRuta;
     }
 
-    public int getEdad() {
-        return edad;
+    public void setNombreRuta(String nombreRuta) {
+        this.nombreRuta = nombreRuta;
     }
 
-    public String getPuesto() {
-        return puesto;
+    public double getDistanciaKm() {
+        return distanciaKm;
     }
 
-    // Setters
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setDistanciaKm(double distanciaKm) {
+        this.distanciaKm = distanciaKm;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public String getDificultad() {
+        return dificultad;
     }
 
-    public void setPuesto(String puesto) {
-        this.puesto = puesto;
+    public void setDificultad(String dificultad) {
+        this.dificultad = dificultad;
     }
 
-    // toString
     @Override
     public String toString() {
-        return "Musico{" +
-                "nombre='" + nombre + '\'' +
-                ", edad=" + edad +
-                ", puesto='" + puesto + '\'' +
+        return "Ruta{" +
+                "nombreRuta='" + nombreRuta + '\'' +
+                ", distanciaKm=" + distanciaKm +
+                ", dificultad='" + dificultad + '\'' +
                 '}';
     }
 }

@@ -20,54 +20,49 @@
  * SOFTWARE.
  */
 
-package u6.tasks.task2v2;
+package u6.repaso.re4;
 
+public class Maquina {
+    private String nombreMaquina;
+    private String zona;
+    private double pesoMaximo;
 
-public class Musico {
-    private String nombre;
-    private int edad;
-    private String puesto;
-
-    // Constructor con todos los parámetros
-    public Musico(String nombre, int edad, String puesto) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.puesto = puesto;
+    public Maquina(String nombreMaquina, String zona, double pesoMaximo) {
+        this.nombreMaquina = nombreMaquina;
+        this.zona = zona;
+        this.pesoMaximo = pesoMaximo;
     }
 
-    // Getters
-    public String getNombre() {
-        return nombre;
+    public String getNombreMaquina() {
+        return nombreMaquina;
     }
 
-    public int getEdad() {
-        return edad;
+    public void setNombreMaquina(String nombreMaquina) {
+        this.nombreMaquina = nombreMaquina;
     }
 
-    public String getPuesto() {
-        return puesto;
+    public String getZona() {
+        return zona;
     }
 
-    // Setters
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setZona(String zona) {
+        this.zona = zona;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public double getPesoMaximo() {
+        return pesoMaximo;
     }
 
-    public void setPuesto(String puesto) {
-        this.puesto = puesto;
+    public void setPesoMaximo(double pesoMaximo) {
+        this.pesoMaximo = pesoMaximo;
     }
 
-    // toString
     @Override
     public String toString() {
-        return "Musico{" +
-                "nombre='" + nombre + '\'' +
-                ", edad=" + edad +
-                ", puesto='" + puesto + '\'' +
+        return "Maquina{" +
+                "nombreMaquina='" + nombreMaquina + '\'' +
+                ", zona='" + zona + '\'' +
+                ", pesoMaximo=" + pesoMaximo +
                 '}';
     }
 }

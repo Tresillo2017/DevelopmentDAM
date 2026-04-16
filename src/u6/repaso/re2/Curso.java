@@ -20,54 +20,49 @@
  * SOFTWARE.
  */
 
-package u6.tasks.task2v2;
+package u6.repaso.re2;
 
+public class Curso {
+    private String nombreCurso;
+    private double duracionHoras;
+    private String nivelRequerido;
 
-public class Musico {
-    private String nombre;
-    private int edad;
-    private String puesto;
-
-    // Constructor con todos los parámetros
-    public Musico(String nombre, int edad, String puesto) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.puesto = puesto;
+    public Curso(String nombreCurso, double duracionHoras, String nivelRequerido) {
+        this.nombreCurso = nombreCurso;
+        this.duracionHoras = duracionHoras;
+        this.nivelRequerido = nivelRequerido;
     }
 
-    // Getters
-    public String getNombre() {
-        return nombre;
+    public String getNombreCurso() {
+        return nombreCurso;
     }
 
-    public int getEdad() {
-        return edad;
+    public void setNombreCurso(String nombreCurso) {
+        this.nombreCurso = nombreCurso;
     }
 
-    public String getPuesto() {
-        return puesto;
+    public double getDuracionHoras() {
+        return duracionHoras;
     }
 
-    // Setters
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setDuracionHoras(double duracionHoras) {
+        this.duracionHoras = duracionHoras;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public String getNivelRequerido() {
+        return nivelRequerido;
     }
 
-    public void setPuesto(String puesto) {
-        this.puesto = puesto;
+    public void setNivelRequerido(String nivelRequerido) {
+        this.nivelRequerido = nivelRequerido;
     }
 
-    // toString
     @Override
     public String toString() {
-        return "Musico{" +
-                "nombre='" + nombre + '\'' +
-                ", edad=" + edad +
-                ", puesto='" + puesto + '\'' +
+        return "Curso{" +
+                "nombreCurso='" + nombreCurso + '\'' +
+                ", duracionHoras=" + duracionHoras +
+                ", nivelRequerido='" + nivelRequerido + '\'' +
                 '}';
     }
 }

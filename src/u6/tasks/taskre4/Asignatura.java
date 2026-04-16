@@ -20,6 +20,7 @@
  * SOFTWARE.
  */
 
+package u6.tasks.taskre4;
 public class Asignatura {
     private String nombre;
     private double nota;

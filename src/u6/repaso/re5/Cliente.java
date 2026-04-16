@@ -20,54 +20,49 @@
  * SOFTWARE.
  */
 
-package u6.tasks.task2v2;
+package u6.repaso.re5;
 
-
-public class Musico {
+public class Cliente {
     private String nombre;
-    private int edad;
-    private String puesto;
+    private int puntosFidelidad;
+    private String tipoCliente;
 
-    // Constructor con todos los parámetros
-    public Musico(String nombre, int edad, String puesto) {
+    public Cliente(String nombre, int puntosFidelidad, String tipoCliente) {
         this.nombre = nombre;
-        this.edad = edad;
-        this.puesto = puesto;
+        this.puntosFidelidad = puntosFidelidad;
+        this.tipoCliente = tipoCliente;
     }
 
-    // Getters
     public String getNombre() {
         return nombre;
     }
 
-    public int getEdad() {
-        return edad;
-    }
-
-    public String getPuesto() {
-        return puesto;
-    }
-
-    // Setters
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public int getPuntosFidelidad() {
+        return puntosFidelidad;
     }
 
-    public void setPuesto(String puesto) {
-        this.puesto = puesto;
+    public void setPuntosFidelidad(int puntosFidelidad) {
+        this.puntosFidelidad = puntosFidelidad;
     }
 
-    // toString
+    public String getTipoCliente() {
+        return tipoCliente;
+    }
+
+    public void setTipoCliente(String tipoCliente) {
+        this.tipoCliente = tipoCliente;
+    }
+
     @Override
     public String toString() {
-        return "Musico{" +
+        return "Cliente{" +
                 "nombre='" + nombre + '\'' +
-                ", edad=" + edad +
-                ", puesto='" + puesto + '\'' +
+                ", puntosFidelidad=" + puntosFidelidad +
+                ", tipoCliente=" + tipoCliente +
                 '}';
     }
 }

@@ -20,54 +20,49 @@
  * SOFTWARE.
  */
 
-package u6.tasks.task2v2;
+package u6.repaso.re7;
 
-
-public class Musico {
+public class Medico {
     private String nombre;
-    private int edad;
-    private String puesto;
+    private String especialidad;
+    private int experiencia;
 
-    // Constructor con todos los parámetros
-    public Musico(String nombre, int edad, String puesto) {
+    public Medico(String nombre, String especialidad, int experiencia) {
         this.nombre = nombre;
-        this.edad = edad;
-        this.puesto = puesto;
+        this.especialidad = especialidad;
+        this.experiencia = experiencia;
     }
 
-    // Getters
     public String getNombre() {
         return nombre;
     }
 
-    public int getEdad() {
-        return edad;
-    }
-
-    public String getPuesto() {
-        return puesto;
-    }
-
-    // Setters
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public String getEspecialidad() {
+        return especialidad;
     }
 
-    public void setPuesto(String puesto) {
-        this.puesto = puesto;
+    public void setEspecialidad(String especialidad) {
+        this.especialidad = especialidad;
     }
 
-    // toString
+    public int getExperiencia() {
+        return experiencia;
+    }
+
+    public void setExperiencia(int experiencia) {
+        this.experiencia = experiencia;
+    }
+
     @Override
     public String toString() {
-        return "Musico{" +
+        return "Medico{" +
                 "nombre='" + nombre + '\'' +
-                ", edad=" + edad +
-                ", puesto='" + puesto + '\'' +
+                ", especialidad='" + especialidad + '\'' +
+                ", experiencia=" + experiencia +
                 '}';
     }
 }

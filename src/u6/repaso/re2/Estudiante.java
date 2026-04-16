@@ -20,54 +20,50 @@
  * SOFTWARE.
  */
 
-package u6.tasks.task2v2;
+package u6.repaso.re2;
 
+public class Estudiante {
 
-public class Musico {
     private String nombre;
     private int edad;
-    private String puesto;
+    private String nivel;
 
-    // Constructor con todos los parámetros
-    public Musico(String nombre, int edad, String puesto) {
+    public Estudiante(String nombre, int edad, String nivel) {
         this.nombre = nombre;
         this.edad = edad;
-        this.puesto = puesto;
+        this.nivel = nivel;
     }
 
-    // Getters
     public String getNombre() {
         return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public int getEdad() {
         return edad;
     }
 
-    public String getPuesto() {
-        return puesto;
-    }
-
-    // Setters
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
     public void setEdad(int edad) {
         this.edad = edad;
     }
 
-    public void setPuesto(String puesto) {
-        this.puesto = puesto;
+    public String getNivel() {
+        return nivel;
     }
 
-    // toString
+    public void setNivel(String nivel) {
+        this.nivel = nivel;
+    }
+
     @Override
     public String toString() {
-        return "Musico{" +
+        return "Estudiante{" +
                 "nombre='" + nombre + '\'' +
                 ", edad=" + edad +
-                ", puesto='" + puesto + '\'' +
+                ", nivel='" + nivel + '\'' +
                 '}';
     }
 }

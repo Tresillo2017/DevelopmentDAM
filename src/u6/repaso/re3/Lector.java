@@ -20,54 +20,49 @@
  * SOFTWARE.
  */
 
-package u6.tasks.task2v2;
+package u6.repaso.re3;
 
-
-public class Musico {
+public class Lector {
     private String nombre;
     private int edad;
-    private String puesto;
+    private String tipo;
 
-    // Constructor con todos los parámetros
-    public Musico(String nombre, int edad, String puesto) {
+    public Lector(String nombre, int edad, String tipo) {
         this.nombre = nombre;
         this.edad = edad;
-        this.puesto = puesto;
+        this.tipo = tipo;
     }
 
-    // Getters
     public String getNombre() {
         return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public int getEdad() {
         return edad;
     }
 
-    public String getPuesto() {
-        return puesto;
-    }
-
-    // Setters
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
     public void setEdad(int edad) {
         this.edad = edad;
     }
 
-    public void setPuesto(String puesto) {
-        this.puesto = puesto;
+    public String getTipo() {
+        return tipo;
     }
 
-    // toString
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
     @Override
     public String toString() {
-        return "Musico{" +
+        return "Lector{" +
                 "nombre='" + nombre + '\'' +
                 ", edad=" + edad +
-                ", puesto='" + puesto + '\'' +
+                ", tipo='" + tipo + '\'' +
                 '}';
     }
 }

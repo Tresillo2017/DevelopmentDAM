@@ -20,6 +20,8 @@
  * SOFTWARE.
  */
 
+package u6.tasks.task2v2;
+
 import java.util.Scanner;
 
 public class Principal {

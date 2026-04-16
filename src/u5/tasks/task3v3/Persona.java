@@ -20,6 +20,7 @@
  * SOFTWARE.
  */
 
+package u5.tasks.task3v3;
 public class Persona {
     private String nombre;
     private String nacionalidad;

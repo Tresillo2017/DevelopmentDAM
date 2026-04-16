@@ -20,6 +20,8 @@
  * SOFTWARE.
  */
 
+package u5.tasks.task2;
+
 public class Cuenta {
     private String titular;
     private double saldo;

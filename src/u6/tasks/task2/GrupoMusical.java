@@ -20,6 +20,8 @@
  * SOFTWARE.
  */
 
+package u6.tasks.task2;
+
 import java.util.Calendar;
 
 public class GrupoMusical {

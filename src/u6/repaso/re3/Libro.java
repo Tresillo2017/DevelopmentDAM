@@ -20,54 +20,49 @@
  * SOFTWARE.
  */
 
-package u6.tasks.task2v2;
+package u6.repaso.re3;
 
+public class Libro {
+    private String titulo;
+    private int paginas;
+    private String genero;
 
-public class Musico {
-    private String nombre;
-    private int edad;
-    private String puesto;
-
-    // Constructor con todos los parámetros
-    public Musico(String nombre, int edad, String puesto) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.puesto = puesto;
+    public Libro(String titulo, int paginas, String genero) {
+        this.titulo = titulo;
+        this.paginas = paginas;
+        this.genero = genero;
     }
 
-    // Getters
-    public String getNombre() {
-        return nombre;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public int getEdad() {
-        return edad;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
-    public String getPuesto() {
-        return puesto;
+    public int getPaginas() {
+        return paginas;
     }
 
-    // Setters
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setPaginas(int paginas) {
+        this.paginas = paginas;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public String getGenero() {
+        return genero;
     }
 
-    public void setPuesto(String puesto) {
-        this.puesto = puesto;
+    public void setGenero(String genero) {
+        this.genero = genero;
     }
 
-    // toString
     @Override
     public String toString() {
-        return "Musico{" +
-                "nombre='" + nombre + '\'' +
-                ", edad=" + edad +
-                ", puesto='" + puesto + '\'' +
+        return "Libro{" +
+                "titulo='" + titulo + '\'' +
+                ", paginas=" + paginas +
+                ", genero='" + genero + '\'' +
                 '}';
     }
 }

@@ -20,6 +20,8 @@
  * SOFTWARE.
  */
 
+package u6.tasks.taskre;
+
 public class Cliente {
 
     private String nombre;

@@ -20,6 +20,8 @@
  * SOFTWARE.
  */
 
+package u6.tasks.task3;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 

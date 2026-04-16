@@ -20,6 +20,7 @@
  * SOFTWARE.
  */
 
+package u6.tasks.task1;
 public class Persona {
     private String DNI;
     private String nombre;

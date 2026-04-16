@@ -20,6 +20,8 @@
  * SOFTWARE.
  */
 
+package u6.tasks.task1;
+
 public class Puesto {
     private String codigo;
     private boolean reservado;

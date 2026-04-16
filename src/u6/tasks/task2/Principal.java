@@ -20,6 +20,8 @@
  * SOFTWARE.
  */
 
+package u6.tasks.task2;
+
 public class Principal {
     public static void main(String[] args) {
         // Crear músicos para el primer grupo

@@ -20,6 +20,8 @@
  * SOFTWARE.
  */
 
+package u5.tasks.task3v3;
+
 import java.util.Scanner;
 
 public class Biblioteca {

@@ -20,54 +20,49 @@
  * SOFTWARE.
  */
 
-package u6.tasks.task2v2;
+package u6.repaso.re6;
 
+public class Mesa {
+    private int numeroMesa;
+    private int capacidad;
+    private String ubicacion;
 
-public class Musico {
-    private String nombre;
-    private int edad;
-    private String puesto;
-
-    // Constructor con todos los parámetros
-    public Musico(String nombre, int edad, String puesto) {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.puesto = puesto;
+    public Mesa(int numeroMesa, int capacidad, String ubicacion) {
+        this.numeroMesa = numeroMesa;
+        this.capacidad = capacidad;
+        this.ubicacion = ubicacion;
     }
 
-    // Getters
-    public String getNombre() {
-        return nombre;
+    public int getNumeroMesa() {
+        return numeroMesa;
     }
 
-    public int getEdad() {
-        return edad;
+    public void setNumeroMesa(int numeroMesa) {
+        this.numeroMesa = numeroMesa;
     }
 
-    public String getPuesto() {
-        return puesto;
+    public int getCapacidad() {
+        return capacidad;
     }
 
-    // Setters
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setCapacidad(int capacidad) {
+        this.capacidad = capacidad;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public String getUbicacion() {
+        return ubicacion;
     }
 
-    public void setPuesto(String puesto) {
-        this.puesto = puesto;
+    public void setUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
     }
 
-    // toString
     @Override
     public String toString() {
-        return "Musico{" +
-                "nombre='" + nombre + '\'' +
-                ", edad=" + edad +
-                ", puesto='" + puesto + '\'' +
+        return "Mesa{" +
+                "numeroMesa=" + numeroMesa +
+                ", capacidad=" + capacidad +
+                ", ubicacion='" + ubicacion + '\'' +
                 '}';
     }
 }

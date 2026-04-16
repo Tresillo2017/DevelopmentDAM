@@ -20,6 +20,8 @@
  * SOFTWARE.
  */
 
+package u6.tasks.taskre4;
+
 import java.util.ArrayList;
 
 public class Principal {

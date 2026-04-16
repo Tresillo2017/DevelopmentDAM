@@ -20,6 +20,7 @@
  * SOFTWARE.
  */
 
+package u6.tasks.task2;
 public class Musico {
     private String nombre;
     private int edad;
