@@ -1,0 +1,86 @@
+/*
+ * Copyright (c) 2026.  Tomas Palma Sanchez
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+package u7.repaso.ex2;
+
+import java.util.ArrayList;
+public abstract class Animal {
+    private String nombre;
+    private int edad;
+    private double peso;
+    public ArrayList<String> vacunas;
+
+    public Animal (String nombre, int edad, double peso) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.peso = peso;
+        vacunas = new ArrayList<>();
+    }
+
+    public void agregarVacuna(String vacuna) {
+        vacunas.add(vacuna);
+    }
+
+    public void mostrarVacunas() {
+        for (String v : vacunas) {
+            System.out.println("Vacunas del animal: " + v);
+        }
+    }
+
+    public void mostrarDatos() {
+        System.out.println("Nombre: " + nombre + " (Edad: " + edad + ", Peso: " + peso + ")");
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public abstract double calcularCosteAdopcion();
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getEdad() {
+        return edad;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public ArrayList<String> getVacunas() {
+        return vacunas;
+    }
+
+    public void setVacunas(ArrayList<String> vacunas) {
+        this.vacunas = vacunas;
+    }
+}
