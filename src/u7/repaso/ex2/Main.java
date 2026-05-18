@@ -59,5 +59,36 @@ public class Main {
         //Buscar animal
         System.out.println("----Buscar Animal------------\n");
         protectora.buscarAnimal("Luna");
+
+        // Mostrar cuantos animales tienen mas de dos vacunas
+        System.out.println("---Animales con mas de dos vacunas----");
+        for (Animal a : protectora.getAnimales()) {
+            if (a.getVacunas().size() > 2) {
+                System.out.println(a.getNombre());
+            }
+        }
+
+        System.out.println("---animal con mayor coste de adopcion---");
+        double costeMayor = 0;
+        Animal animalMayorCoste = null;
+        for (Animal a : protectora.getAnimales()) {
+            double costeFinal = a.calcularCosteAdopcion();
+            if (costeFinal > costeMayor) {
+                costeMayor = costeFinal;
+                animalMayorCoste = a;
+            }
+        }
+        if (animalMayorCoste != null) {
+            System.out.println("Animal: " + animalMayorCoste.getNombre() + " - Coste: " + costeMayor);
+        }
+
+        System.out.println("---Detalles Gatos---");
+        for (Animal a : protectora.getAnimales()) {
+            if (a instanceof Gato) {
+                Gato gato = (Gato) a;
+                System.out.println(gato.getNombre() + " - Color: " + gato.getColor());
+                gato.mostrarDatos();
+            }
+        }
     }
 }
